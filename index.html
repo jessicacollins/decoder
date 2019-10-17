@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  
+  <main>
+    <header>
+      <form class="encodetext">
+        <h1>Encoder</h1>
+        <textarea placeholder="Enter new data to encode"></textarea>
+        <div>
+          <span>Select 4 letter or 5 letter spacing:</span>
+          <input type="radio" id="four-letter" name="letter" value="4"
+                 checked>
+          <label for="four-letter">Four Letter</label>
+          <input type="radio" id="five-letter" name="letter" value="5">
+          <label for="five-letter">Five Letter</label>
+        </div>
+        <div class="encodebutton">
+          <span id="encode-error"></span>
+          <button>Encode</button>
+        </div>
+      </form>
+    </header>
+    <div class="responses"></div>
+  </main>
+
+  <section>
+    <header>
+      <form class="decodetext">
+        <h1>Decoder</h1>
+        <textarea class="decodetextentry" placeholder="Enter new data to decode"></textarea>
+        <div class="decodebutton">
+          <span id="decode-error"></span>
+          <button>Decode</button>
+        </div>
+      </form>
+    </header>
+    <div class="decodedmessages"></div>
+  </section>
+  
+
+  <script id="encoded-message" type="text/x-handlebars-template">
+    <div class="thread">
+      <div class="response">
+        <div class="body">
+          <div class="message">{{encodedMessage}}</div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="decoded-message" type="text/x-handlebars-template">
+    <div class="thread">
+      <div class="response">
+        <div class="body">
+          <div class="message">{{decodedMessage}}</div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+</body>
+</html>

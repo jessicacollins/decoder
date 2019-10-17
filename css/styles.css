@@ -1,0 +1,190 @@
+/****************************************
+  Reset
+*****************************************/
+
+html {
+  color: #777;
+  font-family: 'Open Sans', Arial;
+}
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+html, body { height: 100%; padding: 0; margin: 0; }
+body { min-height: 100%; }
+a:focus, a:active, button:focus {
+  outline: 0;
+}
+
+/****************************************
+  Defaults
+*****************************************/
+
+a {
+  color: #2E9AC2;
+  text-decoration: none;
+}
+
+button {
+  background-color: #2E9AC2;
+  border-radius: 5px;
+  border: none;
+  color: #FFF;
+  padding: 5px 15px;
+}
+
+h1 {
+  color: #2E9AC2;
+}
+
+/****************************************
+  Compose
+*****************************************/
+
+.encodetext > div {
+  margin-top: 10px;
+}
+
+.encodebutton {
+  text-align: right;
+}
+
+.encodetext textarea {
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #C0E1ED;
+  display: block;
+  width: 100%;
+  padding: 4px;
+  resize: none;
+  height: 6em;
+}
+
+.encodetext textarea:focus {
+  outline: none;
+}
+
+#encode-error {
+  margin-right: 1em;
+  color: red;
+}
+
+/****************************************
+  Active State
+*****************************************/
+.decodetext.expand textarea {
+  height: 5em;
+}
+
+.decode.expand > div {
+  display: block;
+}
+
+.decodetext > div {
+  margin-top: 10px;
+}
+
+.decodebutton {
+  text-align: right;
+}
+
+.decodetext textarea {
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #C0E1ED;
+  display: block;
+  width: 100%;
+  padding: 4px;
+  resize: none;
+  height: 6em;
+}
+
+.decodetext textarea:focus {
+  outline: none;
+}
+
+#decode-error {
+  margin-right: 1em;
+  color: red;
+}
+
+/****************************************
+  Active State
+*****************************************/
+.decodetext.expand textarea {
+  height: 5em;
+}
+
+.decode.expand > div {
+  display: block;
+}
+
+/****************************************
+  Response
+*****************************************/
+
+.response {
+  overflow: hidden;
+}
+
+.response .body {
+  padding-left: 10px;
+}
+
+.response .message {
+  margin-top: 10px;
+}
+
+/****************************************
+  Structure
+*****************************************/
+
+body {
+  background: rgb(192, 222, 237) url('../images/bg.png') repeat-x;
+}
+
+main {
+  width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  width: 600px;
+  margin: 0 auto;  
+}
+
+header {
+  margin-top: 20px;
+  background-color: #E5F2F7;
+  border: 1px solid #C0E1ED;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.responses {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.decodedmessages {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/****************************************
+  Thread
+*****************************************/
+
+.thread {
+  border-bottom: 1px solid #E1E8ED;
+}
+
+.thread .response {
+  margin: 10px;
+}
