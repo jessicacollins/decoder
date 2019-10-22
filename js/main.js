@@ -79,7 +79,7 @@ $(function() {
       var decodedMessage = Cipher.decodeCipher(decodeText);
       
       if (decodedMessage) {
-        var decodedMessage = decodedMessage.replace(/(.{4})/g, '$1 ').trim();
+        var decodedMessage = decodedMessage.replace(/(.{5})/g, '$1 ').trim();
         var thread = renderEncodedMessage(decodedMessage);
         $('.decodedmessages').prepend(thread);
       } else {
